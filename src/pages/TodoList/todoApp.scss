@@ -1,0 +1,211 @@
+$primary-color1: #333333;
+$primary-color2: #ffffff;
+$primary-color3: #ca8f48;
+$secondary-color1: #000;
+$secondary-color2: #cd5b63;
+$secondary-color3: #e5e5e5;
+$secondary-color4: #f2f2f2;
+
+.todoApp-wrap {
+  background-color: $primary-color3;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todolist-wrap {
+  background-color: $primary-color2;
+  min-height: 80vh;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  //   justify-content: center;
+  border: 1px solid $secondary-color3;
+  border-radius: 10px;
+}
+
+.todo-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.todolist {
+  padding: 0 20px;
+  width: 50%;
+}
+
+.todolist-doneWrap {
+  padding-bottom: 40px;
+}
+
+.todolist-done {
+  position: relative;
+  width: 50%;
+  padding: 0 20px;
+  border-left: 1px solid $primary-color3;
+}
+
+.done-list {
+  width: 100%;
+  height: 40px;
+  border: 1px solid $primary-color3;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.done-icon {
+  padding: 0 10px;
+
+  path,
+  polyline {
+    color: rgb(56, 175, 86);
+  }
+}
+
+.cancle-icon {
+  cursor: pointer;
+  border: none;
+  background: none;
+  // padding: 0 10px;
+  position: absolute;
+  right: 10px;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.uncomplete-msg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #afaeae;
+}
+
+.todolist-btnWrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-remove {
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid $primary-color3;
+  background: $primary-color3;
+  color: $primary-color2;
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.btn-remove:hover {
+  background: $primary-color2;
+  color: $primary-color3;
+}
+
+.todoinput-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-inputEdit {
+  width: Calc(100% - 67px);
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid $secondary-color2;
+  border-radius: 4px 0 0 4px;
+}
+
+.todo-btnedit {
+  padding: 0 5px;
+  height: 40px;
+  font-size: 12px;
+  border: 1px solid $secondary-color2;
+  background-color: $primary-color2;
+  border-radius: 0 4px 4px 0;
+  color: $secondary-color2;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.todo-btnedit:hover {
+  color: $primary-color2;
+  background-color: $secondary-color2;
+}
+
+.todo-input {
+  width: Calc(100% - 67px);
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #afaeae;
+  border-radius: 4px 0 0 4px;
+}
+
+.todo-btn {
+  //   width: 30%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 12px;
+  border: 1px solid #afaeae;
+  background-color: $primary-color2;
+  border-radius: 0 4px 4px 0;
+  color: $primary-color3;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.todo-btn:hover {
+  background-color: $primary-color3;
+  color: $primary-color2;
+  border: 1px solid $primary-color3;
+}
+
+.todo {
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.hideDone {
+  display: none;
+}
+
+.text-wrap {
+  width: calc(100% - 71px);
+  padding: 5px 10px;
+}
+
+.btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icons {
+  cursor: pointer;
+  border: 1px solid $primary-color3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-color4;
+  margin: 0 5px;
+  height: 20px;
+  width: 20px;
+  background-color: $primary-color3;
+}
